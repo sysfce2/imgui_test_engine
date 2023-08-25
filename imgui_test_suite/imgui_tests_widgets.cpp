@@ -3302,7 +3302,7 @@ void RegisterTests_Widgets(ImGuiTestEngine* e)
         ImGuiListClipper clipper;
         clipper.Begin(ITEMS_COUNT);
         if (ms_io->RangeSrcItem > 0)
-            clipper.IncludeByIndex(selection.ItemDataToIndex(ms_io->RangeSrcItem));
+            clipper.IncludeItemByIndex(selection.ItemDataToIndex(ms_io->RangeSrcItem));
         while (clipper.Step())
         {
             for (int item_n = clipper.DisplayStart; item_n < clipper.DisplayEnd; item_n++)
